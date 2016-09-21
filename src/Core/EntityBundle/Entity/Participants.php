@@ -185,6 +185,63 @@ class Participants
     }
 
     /**
+     * function to get telephonnumber of participant
+     * @return string
+     */
+    public function getTnumber()
+    {
+        return $this->tnmuber;
+    }
+
+    /**
+     * function to set telephonnumber of participant
+     *
+     * @param string $tnumber
+     */
+    public function setTnumber($tnumber)
+    {
+        $this->tnumber = $tnumber;
+    }
+    
+    /**
+     * function to get insurance of participant
+     * @return string
+     */
+    public function getInsurance()
+    {
+        return $this->insurance;
+    }
+
+    /**
+     * function to set insurance of participant
+     *
+     * @param string $insurance
+     */
+    public function setInsurance($insurance)
+    {
+        $this->insurance = $insurance;
+    }
+    
+    /**
+     * function to get birthday of participant
+     * @return string
+     */
+    public function getBirth()
+    {
+        return $this->birth;
+    }
+
+    /**
+     * function to set birthday of participant
+     *
+     * @param string $birth
+     */
+    public function setBirth($birth)
+    {
+        $this->birth = $birth;
+    }
+    
+    /**
      * function to get blacklistedstate
      * @return boolean
      */

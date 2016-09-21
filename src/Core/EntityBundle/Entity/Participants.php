@@ -52,7 +52,34 @@ class Participants
      * @Serializer\SerializedName("email")
      */
     protected $email;
-
+   
+    /**
+     * telephonenumber of a participant
+     * @var string
+     * @ORM\Column(name="tnumber", type="string", nullable=false)
+     * @Serializer\Expose
+     * @Serializer\SerializedName("tnumber")
+     */
+    protected $tnumber;
+    
+    /**
+     * health insurance of a participant
+     * @var string
+     * @ORM\Column(name="insurance", type="string", nullable=false)
+     * @Serializer\Expose
+     * @Serializer\SerializedName("insurance")
+     */
+    protected $insurance;
+    
+    /**
+     * birthday of a participant
+     * @var string
+     * @ORM\Column(name="birth", type="string", nullable=false)
+     * @Serializer\Expose
+     * @Serializer\SerializedName("birth")
+     */
+    protected $birth;
+    
     /**
      * state of a participant, if he is blacklisted
      * @var bool

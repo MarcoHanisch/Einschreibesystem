@@ -96,6 +96,8 @@ class ParticipantsController extends FOSRestController implements ClassResourceI
                 'email'            => $participant->getEmail(),
                 'surname'          => $participant->getSurname(),
                 'name'             => $participant->getName(),
+                'birth'            => $participant->getBirth(),
+                'tnumber'          => $participant->getTnumber(),
                 'blacklisted_at'   => $participant->getBlacklistedAt(),
                 'blacklisted_from' => $participant->getBlacklistedFrom()->getEmail()
             ];

@@ -106,6 +106,27 @@
                                 <input type="email" name="e_mail" ng-model="e_mail" class="form-control input-sm"
                                        placeholder={{placeholder.emailadress}}>
                             </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="birthday" ng-model="birthday"
+                                               class="form-control input-sm" placeholder={{placeholder.birthday}}>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="telephonnumber" ng-model="telephonnumber"
+                                               class="form-control input-sm" placeholder={{placeholder.telephonnumber}}>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="insurance" name="insurance" ng-model="insurance"
+                                        class="form-control input-sm" placeholder={{placeholder.insurance}}>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" id="comment"></textarea>
+                            </div>
                             <button type="button" ng-click="sendInfo()" translate class="btn success btn-block">
                                 BUTTON_ENROLL
                             </button>

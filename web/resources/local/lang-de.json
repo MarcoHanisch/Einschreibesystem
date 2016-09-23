@@ -120,6 +120,8 @@
     "EMPTY_WORKSHOP": "Keine Teilnehmer im Workshop",
     "ENTER_MAIL": "E-Mail eingeben",
     "C": "Euro",
+    "TELEPHONNUMBER": "Telefonnummer",
+    "BIRTHDAY": "Geburtstag"
 
     "ALERT_WORKSHOP_DELETE_PARTICIPANT": "Teilnehmer wurde erfolgreich aus Workshop entfernt",
     "ALERT_WORKSHOP_DELETE_PARTICIPANT_FAIL": "Entfernen des Teilnehmers aus dem Workshop fehlgeschlagen",

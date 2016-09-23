@@ -132,6 +132,10 @@ class WorkshopController extends FOSRestController implements ClassResourceInter
             $participant->setEmail($params["email"]);
             $participant->setName($params["name"]);
             $participant->setSurname($params["surname"]);
+            $participant->setTnumber($params["tnumber"]);
+            $participant->setInsurance($params["insurance"]);
+            $participant->setBirth($params["birth"]);
+            $participant->setComment($params["comment"]);
 
             $this->getDoctrine()->getManager()->persist($participant);
             $this->getDoctrine()->getManager()->flush();

@@ -81,6 +81,15 @@ class Participants
     protected $birth;
     
     /**
+     * comment of the participant
+     * @var string
+     * @ORM\Column(name="comment", type="string", nullable=false)
+     * @Serializer\Expose
+     * @Serializer\SerializedName("comment")
+     */
+    protected $comment;
+    
+    /**
      * state of a participant, if he is blacklisted
      * @var bool
      * @ORM\Column(name="blacklisted", type="boolean", nullable=false)
@@ -239,6 +248,25 @@ class Participants
     public function setBirth($birth)
     {
         $this->birth = $birth;
+    }
+    
+     /**
+     * function to get comment of a participant
+     * @return string
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
+
+    /**
+     * function to set comment of a participant
+     *
+     * @param string $comment
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
     }
     
     /**
